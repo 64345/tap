@@ -1,0 +1,158 @@
+:root {
+    --brownColor: #D1884F;
+    --blueColor: #008AAA;
+    --blue2Color: #3BBADB;
+    
+}
+
+* { 
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;     
+    font-family: 'Poppins', sans-serif; 
+    }
+
+header nav .bars {
+    display: none; 
+}  
+
+header .links a {                 
+    text-decoration: none;
+    color: black;     
+    padding: 20px; 
+
+}
+
+header .links {
+    height: 60px;   
+    display: flex;     
+    justify-content: end;     
+    align-items: center;     
+    margin-right: 165px; 
+}  
+
+header span {     
+    padding-left: 7px;
+} 
+
+header a:first-child  {
+    color: var(--brownColor); 
+}
+
+main .section-one aside h4 {
+    color: var(--blue2Color);
+}
+
+main .section-one aside h1 {
+    color: var(--blueColor);
+    padding: 20px 0px;
+}
+
+main .section-one aside h1 span {
+    color: var(--brownColor);
+}
+
+main .section-one aside p {
+    padding-bottom: 30px;
+}
+
+main .section-one aside p span {
+    color: var(--blue2Color);
+}
+
+main .section-one aside .button a:first-child {
+    text-decoration: none;
+    background-color: var(--blueColor);
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 3px 8px;
+}
+
+main .section-one aside .button a:last-child {
+    text-decoration: none;
+    color: var(--blueColor);
+    border-radius: 5px;
+    border: 2px solid var(--blue2Color);
+    padding: 3px 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+main .section-two article .picture {
+    width: 300px;
+    height: 270px;
+    background-color: var(--brownColor);
+    border-bottom-left-radius: 150px;
+    position: relative;
+}
+
+main .section-two article .picture .picture2 {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: var(--blue2Color);
+    border-bottom-left-radius: 150px;
+}
+
+main {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 414px) {
+    header .links {
+        margin-right: 15px;     
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .section-one {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 770px) {
+    header .links {
+        margin-right: 15px;
+        display: flex;     
+        justify-content: center;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .section-one {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 395px) {
+    body {
+        font-size: 12px;
+    }
+}
